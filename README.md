@@ -5,6 +5,6 @@
 ### Installation
 
 - Configure Slack [webhook](https://api.slack.com/messaging/webhooks) for fail2ban use
-- copy override.conf to /etc/systemd/system/fail2ban.service.d/ and define environment variables
+- copy systemd/override.conf to /etc/systemd/system/fail2ban.service.d/ and define environment variables
 - copy slack-notify.conf to /etc/fail2ban/action.d/
 - restart fail2ban
