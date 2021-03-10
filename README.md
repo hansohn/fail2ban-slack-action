@@ -1,6 +1,6 @@
 # fail2ban-slack
 
-Yet another Slack notification action for [Fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page)
+Yet another Slack notification action for [Fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page). This example utilizes environment variables to define Slack API metadata in order to help with automated implementations.
 
 ## Prerequsites
 
