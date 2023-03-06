@@ -1,10 +1,29 @@
-# fail2ban-slack
+<div align="center">
+  <h3>fail2ban-slack-action</h3>
+  <p>Fail2ban Slack notification action</p>
+  <p>
+    <!-- Github Tag -->
+    <a href="https://gitHub.com/hansohn/fail2ban-slack-action/tags/">
+      <img src="https://img.shields.io/github/tag/hansohn/fail2ban-slack-action.svg?style=for-the-badge">
+    </a>
+    <!-- License -->
+    <a href="https://github.com/hansohn/fail2ban-slack-action/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/hansohn/fail2ban-slack-action.svg?style=for-the-badge">
+    </a>
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/ryanhansohn">
+      <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555">
+    </a>
+  </p>
+</div>
+
+## Description 
 
 Yet another Slack notification action for [Fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page). This example utilizes environment variables to define Slack API metadata in order to help with automated implementations.
 
 ## Prerequsites
 
-Thew following are prerequsites required to utilize this action:
+Thew following are prerequisites required to utilize this action:
 
 - [Fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page)
 - [Slack Webhook](https://api.slack.com/messaging/webhooks)
@@ -14,7 +33,7 @@ Thew following are prerequsites required to utilize this action:
 
 #### Step 1: Generate Slack Webhook
 
-Follow steps outlined in Slack's [Getting started with Incoming Webhooks](https://api.slack.com/messaging/webhooks) documentaiton.
+Follow steps outlined in Slack's [Getting started with Incoming Webhooks](https://api.slack.com/messaging/webhooks) documentation.
 
 #### Step 2: Add Slack-Notify Action
 
@@ -32,7 +51,7 @@ The following environment variables are utilized by this fail2ban action:
 - SLACK_USERNAME: slack user to associate to message (defaults to `fail2ban`)
 - SLACK_ICON: slack icon to associate to message (defaults to `:cop:`)
 
-These environment variables can be configured anyway you want. If fail2ban is running as a systemd servivce you can utilize the included override.conf config by following the step below:
+These environment variables can be configured anyway you want. If fail2ban is running as a systemd service you can utilize the included override.conf config by following the step below:
 
 ```bash
 # copy config
